@@ -1,5 +1,137 @@
 [
   {
+    "id": "github-tencentqqgylab-appagent",
+    "title": "多模态任务：AppAgent",
+    "category": "多模态任务",
+    "priority": "P0",
+    "score": 98,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "AppAgent: Multimodal Agents as Smartphone Users, an LLM-based multimodal agent framework designed to operate smartphone apps.",
+    "agentLoop": "图像、视频或音频与文本进入 → Agent 提取跨模态证据并完成分类、检索或下一步建议 → 人工复核。",
+    "successMetric": "以任务完成率、跨模态准确率、人工复核率和处理时长衡量。",
+    "guardrail": "保留原始媒体和时间戳引用；涉及人物、版权、医疗或安全判断时必须人工确认。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Audio / Video",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/TencentQQGYLab/AppAgent",
+    "evidenceLabel": "TencentQQGYLab/AppAgent · 6886 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.686Z"
+  },
+  {
+    "id": "github-xlang-ai-osworld",
+    "title": "多模态任务：OSWorld",
+    "category": "多模态任务",
+    "priority": "P0",
+    "score": 98,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "[NeurIPS 2024] OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "agentLoop": "图像、视频或音频与文本进入 → Agent 提取跨模态证据并完成分类、检索或下一步建议 → 人工复核。",
+    "successMetric": "以任务完成率、跨模态准确率、人工复核率和处理时长衡量。",
+    "guardrail": "保留原始媒体和时间戳引用；涉及人物、版权、医疗或安全判断时必须人工确认。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Audio / Video",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/xlang-ai/OSWorld",
+    "evidenceLabel": "xlang-ai/OSWorld · 3148 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.686Z"
+  },
+  {
+    "id": "github-elevenlabs-ui",
+    "title": "多模态任务：ui",
+    "category": "多模态任务",
+    "priority": "P0",
+    "score": 98,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "ElevenLabs UI is a component library and custom registry built on top of shadcn/ui to help you build multimodal agents faster.",
+    "agentLoop": "图像、视频或音频与文本进入 → Agent 提取跨模态证据并完成分类、检索或下一步建议 → 人工复核。",
+    "successMetric": "以任务完成率、跨模态准确率、人工复核率和处理时长衡量。",
+    "guardrail": "保留原始媒体和时间戳引用；涉及人物、版权、医疗或安全判断时必须人工确认。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Audio / Video",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/elevenlabs/ui",
+    "evidenceLabel": "elevenlabs/ui · 2390 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.686Z"
+  },
+  {
+    "id": "github-web-arena-x-visualwebarena",
+    "title": "多模态任务：visualwebarena",
+    "category": "多模态任务",
+    "priority": "P0",
+    "score": 98,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "VisualWebArena is a benchmark for multimodal agents.",
+    "agentLoop": "图像、视频或音频与文本进入 → Agent 提取跨模态证据并完成分类、检索或下一步建议 → 人工复核。",
+    "successMetric": "以任务完成率、跨模态准确率、人工复核率和处理时长衡量。",
+    "guardrail": "保留原始媒体和时间戳引用；涉及人物、版权、医疗或安全判断时必须人工确认。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Audio / Video",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/web-arena-x/visualwebarena",
+    "evidenceLabel": "web-arena-x/visualwebarena · 487 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.686Z"
+  },
+  {
+    "id": "github-voxos-ai-bolna",
+    "title": "多模态任务：bolna",
+    "category": "多模态任务",
+    "priority": "P0",
+    "score": 97,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "End-to-end platform for building voice first multimodal agents",
+    "agentLoop": "图像、视频或音频与文本进入 → Agent 提取跨模态证据并完成分类、检索或下一步建议 → 人工复核。",
+    "successMetric": "以任务完成率、跨模态准确率、人工复核率和处理时长衡量。",
+    "guardrail": "保留原始媒体和时间戳引用；涉及人物、版权、医疗或安全判断时必须人工确认。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Audio / Video",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/voxos-ai/bolna",
+    "evidenceLabel": "voxos-ai/bolna · 432 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.686Z"
+  },
+  {
+    "id": "github-lingyuanli-multigen",
+    "title": "多模态任务：MultiGen",
+    "category": "多模态任务",
+    "priority": "P0",
+    "score": 97,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Multi-agent end-to-end application - General-purpose artificial intelligence agent for multimodal agent collaboration",
+    "agentLoop": "图像、视频或音频与文本进入 → Agent 提取跨模态证据并完成分类、检索或下一步建议 → 人工复核。",
+    "successMetric": "以任务完成率、跨模态准确率、人工复核率和处理时长衡量。",
+    "guardrail": "保留原始媒体和时间戳引用；涉及人物、版权、医疗或安全判断时必须人工确认。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Audio / Video",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/lingyuanli/MultiGen",
+    "evidenceLabel": "lingyuanli/MultiGen · 401 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.686Z"
+  },
+  {
     "id": "github-marckohlbrugge-37signals-skills",
     "title": "工程交付：37signals-skills",
     "category": "工程交付",
@@ -18,7 +150,7 @@
     "evidenceUrl": "https://github.com/marckohlbrugge/37signals-skills",
     "evidenceLabel": "marckohlbrugge/37signals-skills · 718 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.245Z"
+    "discoveredAt": "2026-09-18T13:06:44.527Z"
   },
   {
     "id": "github-fradser-dotclaude",
@@ -39,7 +171,7 @@
     "evidenceUrl": "https://github.com/FradSer/dotclaude",
     "evidenceLabel": "FradSer/dotclaude · 593 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.245Z"
+    "discoveredAt": "2026-09-18T13:06:44.527Z"
   },
   {
     "id": "github-persiyanov-herdr-reviewr",
@@ -60,7 +192,7 @@
     "evidenceUrl": "https://github.com/persiyanov/herdr-reviewr",
     "evidenceLabel": "persiyanov/herdr-reviewr · 726 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.245Z"
+    "discoveredAt": "2026-09-18T13:06:44.527Z"
   },
   {
     "id": "github-josstei-maestro-orchestrate",
@@ -81,7 +213,7 @@
     "evidenceUrl": "https://github.com/josstei/maestro-orchestrate",
     "evidenceLabel": "josstei/maestro-orchestrate · 464 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.245Z"
+    "discoveredAt": "2026-09-18T13:06:44.527Z"
   },
   {
     "id": "github-alibaba-open-code-review",
@@ -100,9 +232,9 @@
       "GitHub discovery"
     ],
     "evidenceUrl": "https://github.com/alibaba/open-code-review",
-    "evidenceLabel": "alibaba/open-code-review · 36192 stars",
+    "evidenceLabel": "alibaba/open-code-review · 36196 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.245Z"
+    "discoveredAt": "2026-09-18T13:06:44.527Z"
   },
   {
     "id": "github-darrenhinde-openagentscontrol",
@@ -123,7 +255,7 @@
     "evidenceUrl": "https://github.com/darrenhinde/OpenAgentsControl",
     "evidenceLabel": "darrenhinde/OpenAgentsControl · 4862 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.245Z"
+    "discoveredAt": "2026-09-18T13:06:44.527Z"
   },
   {
     "id": "github-kenn-io-roborev",
@@ -144,7 +276,7 @@
     "evidenceUrl": "https://github.com/kenn-io/roborev",
     "evidenceLabel": "kenn-io/roborev · 1718 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.245Z"
+    "discoveredAt": "2026-09-18T13:06:44.527Z"
   },
   {
     "id": "github-mattzcarey-shippie",
@@ -165,7 +297,7 @@
     "evidenceUrl": "https://github.com/mattzcarey/shippie",
     "evidenceLabel": "mattzcarey/shippie · 2507 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.245Z"
+    "discoveredAt": "2026-09-18T13:06:44.527Z"
   },
   {
     "id": "github-mukul975-anthropic-cybersecurity-skills",
@@ -186,7 +318,7 @@
     "evidenceUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
     "evidenceLabel": "mukul975/Anthropic-Cybersecurity-Skills · 32940 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.243Z"
+    "discoveredAt": "2026-09-18T13:06:44.448Z"
   },
   {
     "id": "github-bytebase-bytebase",
@@ -207,7 +339,7 @@
     "evidenceUrl": "https://github.com/bytebase/bytebase",
     "evidenceLabel": "bytebase/bytebase · 14493 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.243Z"
+    "discoveredAt": "2026-09-18T13:06:44.448Z"
   },
   {
     "id": "github-piebald-ai-claude-code-system-prompts",
@@ -228,7 +360,7 @@
     "evidenceUrl": "https://github.com/Piebald-AI/claude-code-system-prompts",
     "evidenceLabel": "Piebald-AI/claude-code-system-prompts · 12711 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.243Z"
+    "discoveredAt": "2026-09-18T13:06:44.448Z"
   },
   {
     "id": "github-eosphoros-ai-db-gpt",
@@ -249,7 +381,7 @@
     "evidenceUrl": "https://github.com/eosphoros-ai/DB-GPT",
     "evidenceLabel": "eosphoros-ai/DB-GPT · 20007 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.243Z"
+    "discoveredAt": "2026-09-18T13:06:44.448Z"
   },
   {
     "id": "github-affaan-m-ecc",
@@ -268,9 +400,9 @@
       "GitHub discovery"
     ],
     "evidenceUrl": "https://github.com/affaan-m/ECC",
-    "evidenceLabel": "affaan-m/ECC · 261582 stars",
+    "evidenceLabel": "affaan-m/ECC · 261587 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.243Z"
+    "discoveredAt": "2026-09-18T13:06:44.448Z"
   },
   {
     "id": "github-nearai-ironclaw",
@@ -291,7 +423,7 @@
     "evidenceUrl": "https://github.com/nearai/ironclaw",
     "evidenceLabel": "nearai/ironclaw · 12622 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.243Z"
+    "discoveredAt": "2026-09-18T13:06:44.448Z"
   },
   {
     "id": "github-nanocoai-nanoclaw",
@@ -312,7 +444,7 @@
     "evidenceUrl": "https://github.com/nanocoai/nanoclaw",
     "evidenceLabel": "nanocoai/nanoclaw · 30795 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.243Z"
+    "discoveredAt": "2026-09-18T13:06:44.448Z"
   },
   {
     "id": "github-nvidia-skillspector",
@@ -331,9 +463,9 @@
       "GitHub discovery"
     ],
     "evidenceUrl": "https://github.com/NVIDIA/SkillSpector",
-    "evidenceLabel": "NVIDIA/SkillSpector · 17708 stars",
+    "evidenceLabel": "NVIDIA/SkillSpector · 17709 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.243Z"
+    "discoveredAt": "2026-09-18T13:06:44.448Z"
   },
   {
     "id": "code-change-verification",
@@ -373,7 +505,73 @@
     "evidenceUrl": "https://github.com/cossistantcom/cossistant",
     "evidenceLabel": "cossistantcom/cossistant · 722 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.200Z"
+    "discoveredAt": "2026-09-18T13:06:44.604Z"
+  },
+  {
+    "id": "github-video-db-director",
+    "title": "多模态任务：Director",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 94,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "AI video agents framework for next-gen video interactions and workflows.",
+    "agentLoop": "视频与任务目标进入 → Agent 定位片段、提取事件或生成操作建议 → 人工抽检与确认。",
+    "successMetric": "以片段召回率、事件准确率、审核吞吐量和处理时长衡量。",
+    "guardrail": "不得仅依自动结果采取处罚、支付或安全关键行动；须保留时间戳与原始视频审计链。",
+    "tags": [
+      "Multimodal",
+      "Video",
+      "Temporal reasoning",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/video-db/Director",
+    "evidenceLabel": "video-db/Director · 1537 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.538Z"
+  },
+  {
+    "id": "github-univa-agent-univa",
+    "title": "多模态任务：univa",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 94,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Official Code Repo for UniVA: Universal Video Agents",
+    "agentLoop": "视频与任务目标进入 → Agent 定位片段、提取事件或生成操作建议 → 人工抽检与确认。",
+    "successMetric": "以片段召回率、事件准确率、审核吞吐量和处理时长衡量。",
+    "guardrail": "不得仅依自动结果采取处罚、支付或安全关键行动；须保留时间戳与原始视频审计链。",
+    "tags": [
+      "Multimodal",
+      "Video",
+      "Temporal reasoning",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/univa-agent/univa",
+    "evidenceLabel": "univa-agent/univa · 529 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.538Z"
+  },
+  {
+    "id": "github-hkuds-videoagent",
+    "title": "多模态任务：VideoAgent",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 94,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "[EMNLP2026] \"VideoAgent: All-in-One Agentic Framework for Video Understanding and Editing, and Remaking\"",
+    "agentLoop": "视频与任务目标进入 → Agent 定位片段、提取事件或生成操作建议 → 人工抽检与确认。",
+    "successMetric": "以片段召回率、事件准确率、审核吞吐量和处理时长衡量。",
+    "guardrail": "不得仅依自动结果采取处罚、支付或安全关键行动；须保留时间戳与原始视频审计链。",
+    "tags": [
+      "Multimodal",
+      "Video",
+      "Temporal reasoning",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/HKUDS/VideoAgent",
+    "evidenceLabel": "HKUDS/VideoAgent · 1888 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.538Z"
   },
   {
     "id": "github-huabeitech-agent-desk",
@@ -394,7 +592,7 @@
     "evidenceUrl": "https://github.com/huabeitech/agent-desk",
     "evidenceLabel": "huabeitech/agent-desk · 246 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.200Z"
+    "discoveredAt": "2026-09-18T13:06:44.604Z"
   },
   {
     "id": "github-techwithtim-langflow-customer-support-agent",
@@ -415,7 +613,7 @@
     "evidenceUrl": "https://github.com/techwithtim/Langflow-Customer-Support-Agent",
     "evidenceLabel": "techwithtim/Langflow-Customer-Support-Agent · 224 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.200Z"
+    "discoveredAt": "2026-09-18T13:06:44.604Z"
   },
   {
     "id": "github-liangdabiao-langgraph-multi-agent-rag-customer-support",
@@ -436,7 +634,7 @@
     "evidenceUrl": "https://github.com/liangdabiao/langgraph_multi-agent-rag-customer-support",
     "evidenceLabel": "liangdabiao/langgraph_multi-agent-rag-customer-support · 325 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.200Z"
+    "discoveredAt": "2026-09-18T13:06:44.604Z"
   },
   {
     "id": "github-kaymen99-langgraph-email-automation",
@@ -457,7 +655,117 @@
     "evidenceUrl": "https://github.com/kaymen99/langgraph-email-automation",
     "evidenceLabel": "kaymen99/langgraph-email-automation · 274 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.200Z"
+    "discoveredAt": "2026-09-18T13:06:44.604Z"
+  },
+  {
+    "id": "github-idwts-crayotter",
+    "title": "多模态任务：Crayotter",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 93,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "🦦 Crayotter: A Multimodal AI-Agent for Video-Editing, Video-Composing, and Video Production. Powered by Multimodal LLMs for autonomous Text-to-Video agentic framework. | 基于多模态大模型 (Multimodal LLMs) 的 AI 剪辑智能体，支持从文字需求到视频成品的端到端全自动生产与创作。",
+    "agentLoop": "视频与任务目标进入 → Agent 定位片段、提取事件或生成操作建议 → 人工抽检与确认。",
+    "successMetric": "以片段召回率、事件准确率、审核吞吐量和处理时长衡量。",
+    "guardrail": "不得仅依自动结果采取处罚、支付或安全关键行动；须保留时间戳与原始视频审计链。",
+    "tags": [
+      "Multimodal",
+      "Video",
+      "Temporal reasoning",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/idwts/Crayotter",
+    "evidenceLabel": "idwts/Crayotter · 240 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.538Z"
+  },
+  {
+    "id": "github-xiaoc7r-dovideo-ai",
+    "title": "多模态任务：DOVideo-AI",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 93,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "一个面向长视频内容理解的 Video Agent 平台。",
+    "agentLoop": "视频与任务目标进入 → Agent 定位片段、提取事件或生成操作建议 → 人工抽检与确认。",
+    "successMetric": "以片段召回率、事件准确率、审核吞吐量和处理时长衡量。",
+    "guardrail": "不得仅依自动结果采取处罚、支付或安全关键行动；须保留时间戳与原始视频审计链。",
+    "tags": [
+      "Multimodal",
+      "Video",
+      "Temporal reasoning",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/Xiaoc7r/DOVideo-AI",
+    "evidenceLabel": "Xiaoc7r/DOVideo-AI · 328 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.538Z"
+  },
+  {
+    "id": "github-saharmor-gemini-multimodal-playground",
+    "title": "多模态任务：gemini-multimodal-playground",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 93,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Build realtime voice and video agents with Google's new Gemini 2.0 (API is free for now)",
+    "agentLoop": "视频与任务目标进入 → Agent 定位片段、提取事件或生成操作建议 → 人工抽检与确认。",
+    "successMetric": "以片段召回率、事件准确率、审核吞吐量和处理时长衡量。",
+    "guardrail": "不得仅依自动结果采取处罚、支付或安全关键行动；须保留时间戳与原始视频审计链。",
+    "tags": [
+      "Multimodal",
+      "Video",
+      "Temporal reasoning",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/saharmor/gemini-multimodal-playground",
+    "evidenceLabel": "saharmor/gemini-multimodal-playground · 327 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.538Z"
+  },
+  {
+    "id": "github-heygen-com-skills",
+    "title": "多模态任务：skills",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 93,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "HeyGen AI agent skills — avatar creation and video production via the v3 Video Agent pipeline",
+    "agentLoop": "视频与任务目标进入 → Agent 定位片段、提取事件或生成操作建议 → 人工抽检与确认。",
+    "successMetric": "以片段召回率、事件准确率、审核吞吐量和处理时长衡量。",
+    "guardrail": "不得仅依自动结果采取处罚、支付或安全关键行动；须保留时间戳与原始视频审计链。",
+    "tags": [
+      "Multimodal",
+      "Video",
+      "Temporal reasoning",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/heygen-com/skills",
+    "evidenceLabel": "heygen-com/skills · 438 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.538Z"
+  },
+  {
+    "id": "github-yuefan1014-videoagent",
+    "title": "多模态任务：VideoAgent",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 93,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "This is the official code of VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding (ECCV 2024)",
+    "agentLoop": "视频与任务目标进入 → Agent 定位片段、提取事件或生成操作建议 → 人工抽检与确认。",
+    "successMetric": "以片段召回率、事件准确率、审核吞吐量和处理时长衡量。",
+    "guardrail": "不得仅依自动结果采取处罚、支付或安全关键行动；须保留时间戳与原始视频审计链。",
+    "tags": [
+      "Multimodal",
+      "Video",
+      "Temporal reasoning",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/YueFan1014/VideoAgent",
+    "evidenceLabel": "YueFan1014/VideoAgent · 331 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.538Z"
   },
   {
     "id": "github-199ocero-filachat",
@@ -478,7 +786,7 @@
     "evidenceUrl": "https://github.com/199ocero/filachat",
     "evidenceLabel": "199ocero/filachat · 184 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.200Z"
+    "discoveredAt": "2026-09-18T13:06:44.604Z"
   },
   {
     "id": "github-akj2018-multi-ai-agent-systems-with-crewai",
@@ -499,7 +807,7 @@
     "evidenceUrl": "https://github.com/akj2018/Multi-AI-Agent-Systems-with-crewAI",
     "evidenceLabel": "akj2018/Multi-AI-Agent-Systems-with-crewAI · 168 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.200Z"
+    "discoveredAt": "2026-09-18T13:06:44.604Z"
   },
   {
     "id": "github-openai-openai-support-agent-demo",
@@ -520,7 +828,7 @@
     "evidenceUrl": "https://github.com/openai/openai-support-agent-demo",
     "evidenceLabel": "openai/openai-support-agent-demo · 199 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.200Z"
+    "discoveredAt": "2026-09-18T13:06:44.604Z"
   },
   {
     "id": "support-ticket-triage",
@@ -561,6 +869,94 @@
     "evidenceLabel": "NIST Cybersecurity Framework"
   },
   {
+    "id": "github-li-shutong-exat-any-ionogram",
+    "title": "多模态任务：ExAt-Any-Ionogram",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 90,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Zero-shot ionogram F-layer trace extraction with vision-language agents (ExAt)",
+    "agentLoop": "视觉输入与任务说明进入 → Agent 定位证据、生成结构化结果或执行建议 → 人工确认高影响结果。",
+    "successMetric": "以证据定位准确率、结构化字段正确率和人工返工率衡量。",
+    "guardrail": "不得把视觉推断视为身份、医疗、合规或安全结论；敏感内容只在获授权范围处理。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Structured output",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/li-shutong/ExAt-Any-Ionogram",
+    "evidenceLabel": "li-shutong/ExAt-Any-Ionogram · 11 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.445Z"
+  },
+  {
+    "id": "github-wuaodi-spacemind",
+    "title": "多模态任务：SpaceMind",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 90,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "A Modular and Self-Evolving Embodied Vision-Language Agent Framework for Autonomous On-orbit Servicing",
+    "agentLoop": "视觉输入与任务说明进入 → Agent 定位证据、生成结构化结果或执行建议 → 人工确认高影响结果。",
+    "successMetric": "以证据定位准确率、结构化字段正确率和人工返工率衡量。",
+    "guardrail": "不得把视觉推断视为身份、医疗、合规或安全结论；敏感内容只在获授权范围处理。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Structured output",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/wuaodi/SpaceMind",
+    "evidenceLabel": "wuaodi/SpaceMind · 17 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.444Z"
+  },
+  {
+    "id": "github-hkoziolek-diagex-repro",
+    "title": "多模态任务：DiagEx-Repro",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 89,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "This repository is the public reproducibility package for the manuscript \"DiagEx: Zero-Shot P&ID-to-DEXPI Digitization with a Vision-Language Agent \"",
+    "agentLoop": "视觉输入与任务说明进入 → Agent 定位证据、生成结构化结果或执行建议 → 人工确认高影响结果。",
+    "successMetric": "以证据定位准确率、结构化字段正确率和人工返工率衡量。",
+    "guardrail": "不得把视觉推断视为身份、医疗、合规或安全结论；敏感内容只在获授权范围处理。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Structured output",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/hkoziolek/DiagEx-Repro",
+    "evidenceLabel": "hkoziolek/DiagEx-Repro · 4 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.445Z"
+  },
+  {
+    "id": "github-znshje-tsegagent",
+    "title": "多模态任务：TSegAgent",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 89,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Official code for TSegAgent: Zero-Shot Tooth Segmentation via Geometry-Aware Vision-Language Agents",
+    "agentLoop": "视觉输入与任务说明进入 → Agent 定位证据、生成结构化结果或执行建议 → 人工确认高影响结果。",
+    "successMetric": "以证据定位准确率、结构化字段正确率和人工返工率衡量。",
+    "guardrail": "不得把视觉推断视为身份、医疗、合规或安全结论；敏感内容只在获授权范围处理。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Structured output",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/znshje/TSegAgent",
+    "evidenceLabel": "znshje/TSegAgent · 4 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.445Z"
+  },
+  {
     "id": "github-slothflowlabs-duckle",
     "title": "数据运营：duckle",
     "category": "数据运营",
@@ -579,7 +975,7 @@
     "evidenceUrl": "https://github.com/slothflowlabs/duckle",
     "evidenceLabel": "slothflowlabs/duckle · 1308 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.270Z"
+    "discoveredAt": "2026-09-18T13:06:44.469Z"
   },
   {
     "id": "github-vercel-labs-agent-browser",
@@ -598,9 +994,9 @@
       "GitHub discovery"
     ],
     "evidenceUrl": "https://github.com/vercel-labs/agent-browser",
-    "evidenceLabel": "vercel-labs/agent-browser · 42816 stars",
+    "evidenceLabel": "vercel-labs/agent-browser · 42817 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.312Z"
+    "discoveredAt": "2026-09-18T13:06:44.532Z"
   },
   {
     "id": "github-aipexstudio-aipex",
@@ -621,7 +1017,7 @@
     "evidenceUrl": "https://github.com/AIPexStudio/AIPex",
     "evidenceLabel": "AIPexStudio/AIPex · 1249 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.312Z"
+    "discoveredAt": "2026-09-18T13:06:44.532Z"
   },
   {
     "id": "github-tencent-browserskill",
@@ -640,9 +1036,9 @@
       "GitHub discovery"
     ],
     "evidenceUrl": "https://github.com/Tencent/BrowserSkill",
-    "evidenceLabel": "Tencent/BrowserSkill · 4901 stars",
+    "evidenceLabel": "Tencent/BrowserSkill · 4907 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.312Z"
+    "discoveredAt": "2026-09-18T13:06:44.532Z"
   },
   {
     "id": "github-browserwing-browserwing",
@@ -663,7 +1059,7 @@
     "evidenceUrl": "https://github.com/browserwing/browserwing",
     "evidenceLabel": "browserwing/browserwing · 1413 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.312Z"
+    "discoveredAt": "2026-09-18T13:06:44.532Z"
   },
   {
     "id": "github-citrolabs-ego-lite",
@@ -684,7 +1080,7 @@
     "evidenceUrl": "https://github.com/citrolabs/ego-lite",
     "evidenceLabel": "citrolabs/ego-lite · 16165 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.312Z"
+    "discoveredAt": "2026-09-18T13:06:44.532Z"
   },
   {
     "id": "github-hyperbrowserai-hyperagent",
@@ -705,7 +1101,7 @@
     "evidenceUrl": "https://github.com/hyperbrowserai/HyperAgent",
     "evidenceLabel": "hyperbrowserai/HyperAgent · 1572 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.312Z"
+    "discoveredAt": "2026-09-18T13:06:44.532Z"
   },
   {
     "id": "github-skalesapp-skales",
@@ -726,7 +1122,7 @@
     "evidenceUrl": "https://github.com/skalesapp/skales",
     "evidenceLabel": "skalesapp/skales · 1899 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.312Z"
+    "discoveredAt": "2026-09-18T13:06:44.532Z"
   },
   {
     "id": "github-browser-act-skills",
@@ -747,7 +1143,95 @@
     "evidenceUrl": "https://github.com/browser-act/skills",
     "evidenceLabel": "browser-act/skills · 5954 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.312Z"
+    "discoveredAt": "2026-09-18T13:06:44.532Z"
+  },
+  {
+    "id": "github-badhope-mobiagent",
+    "title": "多模态任务：MobiAgent",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 88,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Customizable mobile agent framework for Android / HarmonyOS — vision-language agent with plug-in model family, record-and-replay acceleration, and real-device evaluation benchmark.",
+    "agentLoop": "视觉输入与任务说明进入 → Agent 定位证据、生成结构化结果或执行建议 → 人工确认高影响结果。",
+    "successMetric": "以证据定位准确率、结构化字段正确率和人工返工率衡量。",
+    "guardrail": "不得把视觉推断视为身份、医疗、合规或安全结论；敏感内容只在获授权范围处理。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Structured output",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/badhope/MobiAgent",
+    "evidenceLabel": "badhope/MobiAgent · 3 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.445Z"
+  },
+  {
+    "id": "github-shotdowndiane-co-agent",
+    "title": "多模态任务：co-agent",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 87,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "official code of paper \"See to Solve: A Geometry-Aware Vision-Language Agent for Real-World Routing Problem\"",
+    "agentLoop": "视觉输入与任务说明进入 → Agent 定位证据、生成结构化结果或执行建议 → 人工确认高影响结果。",
+    "successMetric": "以证据定位准确率、结构化字段正确率和人工返工率衡量。",
+    "guardrail": "不得把视觉推断视为身份、医疗、合规或安全结论；敏感内容只在获授权范围处理。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Structured output",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/ShotDownDiane/co-agent",
+    "evidenceLabel": "ShotDownDiane/co-agent · 1 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.445Z"
+  },
+  {
+    "id": "github-karthikred2000-grounded-vla",
+    "title": "多模态任务：grounded_vla",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 87,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Grounded Vision-Language Agents for Instruction Following (CS 639 Spring 2026)",
+    "agentLoop": "视觉输入与任务说明进入 → Agent 定位证据、生成结构化结果或执行建议 → 人工确认高影响结果。",
+    "successMetric": "以证据定位准确率、结构化字段正确率和人工返工率衡量。",
+    "guardrail": "不得把视觉推断视为身份、医疗、合规或安全结论；敏感内容只在获授权范围处理。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Structured output",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/KarthikRed2000/grounded_vla",
+    "evidenceLabel": "KarthikRed2000/grounded_vla · 1 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.445Z"
+  },
+  {
+    "id": "github-iamlilaj-toolgate",
+    "title": "多模态任务：toolgate",
+    "category": "多模态任务",
+    "priority": "P1",
+    "score": 87,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "ToolGate: Reducing Perceptual Tool Calls in Vision-Language Agents with Pre-Call Gating (EMNLP 2026)",
+    "agentLoop": "视觉输入与任务说明进入 → Agent 定位证据、生成结构化结果或执行建议 → 人工确认高影响结果。",
+    "successMetric": "以证据定位准确率、结构化字段正确率和人工返工率衡量。",
+    "guardrail": "不得把视觉推断视为身份、医疗、合规或安全结论；敏感内容只在获授权范围处理。",
+    "tags": [
+      "Multimodal",
+      "Vision",
+      "Structured output",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/iamlilAJ/toolgate",
+    "evidenceLabel": "iamlilAJ/toolgate · 1 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T13:06:44.445Z"
   },
   {
     "id": "document-to-workflow",
@@ -807,27 +1291,6 @@
     "evidenceLabel": "dbt 数据测试文档"
   },
   {
-    "id": "github-unknown-333-awesome-data-engineering-skills",
-    "title": "数据运营：awesome-data-engineering-skills",
-    "category": "数据运营",
-    "priority": "P1",
-    "score": 84,
-    "frequency": "公开工作流信号；待内部验证",
-    "summary": "36 data-engineering skills for AI coding agents — dbt, Airflow, Dagster, Prefect, Spark, Snowflake, BigQuery, Databricks, Kafka, Iceberg. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with idempotency, backfill, and data-quality know-how. Runs in Claude Code, Cursor, Codex, Copilot, Gemini CLI and more.",
-    "agentLoop": "质量规则失败 → Agent 对比上游变更与历史数据 → 提出影响范围和修复建议 → 负责人审核。",
-    "successMetric": "以恢复时间、重复故障率和影响范围衡量。",
-    "guardrail": "生产环境只读；写入操作必须由数据负责人批准。",
-    "tags": [
-      "Data quality",
-      "Root cause",
-      "GitHub discovery"
-    ],
-    "evidenceUrl": "https://github.com/Unknown-333/awesome-data-engineering-skills",
-    "evidenceLabel": "Unknown-333/awesome-data-engineering-skills · 18 stars",
-    "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.270Z"
-  },
-  {
     "id": "github-antonbarr-data-dqt",
     "title": "数据运营：dqt",
     "category": "数据运营",
@@ -846,7 +1309,7 @@
     "evidenceUrl": "https://github.com/antonbarr-data/dqt",
     "evidenceLabel": "antonbarr-data/dqt · 12 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.270Z"
+    "discoveredAt": "2026-09-18T13:06:44.469Z"
   },
   {
     "id": "github-shalintripathi-saas-marketing-agents",
@@ -867,7 +1330,7 @@
     "evidenceUrl": "https://github.com/shalintripathi/saas-marketing-agents",
     "evidenceLabel": "shalintripathi/saas-marketing-agents · 14 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.270Z"
+    "discoveredAt": "2026-09-18T13:06:44.469Z"
   },
   {
     "id": "github-balaji-r-05-visa-hackathon",
@@ -888,7 +1351,7 @@
     "evidenceUrl": "https://github.com/Balaji-R-05/visa-hackathon",
     "evidenceLabel": "Balaji-R-05/visa-hackathon · 10 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.270Z"
+    "discoveredAt": "2026-09-18T13:06:44.469Z"
   },
   {
     "id": "github-863683348-dsh-plugin-finance-data",
@@ -909,7 +1372,7 @@
     "evidenceUrl": "https://github.com/863683348/dsh-plugin-finance-data",
     "evidenceLabel": "863683348/dsh-plugin-finance-data · 5 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.270Z"
+    "discoveredAt": "2026-09-18T13:06:44.469Z"
   },
   {
     "id": "github-evgeniimatveev-mcp-data-quality-agent",
@@ -930,7 +1393,7 @@
     "evidenceUrl": "https://github.com/evgeniimatveev/mcp-data-quality-agent",
     "evidenceLabel": "evgeniimatveev/mcp-data-quality-agent · 7 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.270Z"
+    "discoveredAt": "2026-09-18T13:06:44.469Z"
   },
   {
     "id": "github-dungnotnull-synthetic-data-quality-qc-agent-skill",
@@ -951,7 +1414,7 @@
     "evidenceUrl": "https://github.com/dungnotnull/synthetic-data-quality-qc-agent-skill",
     "evidenceLabel": "dungnotnull/synthetic-data-quality-qc-agent-skill · 5 stars",
     "source": "github-discovery",
-    "discoveredAt": "2026-09-18T12:59:51.270Z"
+    "discoveredAt": "2026-09-18T13:06:44.469Z"
   },
   {
     "id": "browser-backoffice-operations",
