@@ -17,4 +17,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://logicrw.github.io/awesome-jev-projects/sitemap.xml
+Sitemap: https://waynezengcheng-commits.github.io/awesome-agent-task-discovery/sitemap.xml
