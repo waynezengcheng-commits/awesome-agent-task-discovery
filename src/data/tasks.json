@@ -1,5 +1,341 @@
 [
   {
+    "id": "github-marckohlbrugge-37signals-skills",
+    "title": "工程交付：37signals-skills",
+    "category": "工程交付",
+    "priority": "P0",
+    "score": 97,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Unofficial agent skills + reference guide that teach AI coding assistants to write Rails the 37signals way — extracted from Fizzy, Campfire, and DHH's code reviews",
+    "agentLoop": "代码变更触发 → Agent 收集变更与校验结果 → 标出风险与证据 → 工程师裁决。",
+    "successMetric": "以审查覆盖率、首次通过率和修复时长衡量。",
+    "guardrail": "不得自动合并、发布或修改生产配置。",
+    "tags": [
+      "Code review",
+      "CI",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/marckohlbrugge/37signals-skills",
+    "evidenceLabel": "marckohlbrugge/37signals-skills · 718 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.259Z"
+  },
+  {
+    "id": "github-fradser-dotclaude",
+    "title": "工程交付：dotclaude",
+    "category": "工程交付",
+    "priority": "P0",
+    "score": 97,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "A comprehensive development environment with specialized AI agents for code review, security analysis, and technical leadership.",
+    "agentLoop": "代码变更触发 → Agent 收集变更与校验结果 → 标出风险与证据 → 工程师裁决。",
+    "successMetric": "以审查覆盖率、首次通过率和修复时长衡量。",
+    "guardrail": "不得自动合并、发布或修改生产配置。",
+    "tags": [
+      "Code review",
+      "CI",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/FradSer/dotclaude",
+    "evidenceLabel": "FradSer/dotclaude · 593 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.259Z"
+  },
+  {
+    "id": "github-persiyanov-herdr-reviewr",
+    "title": "工程交付：herdr-reviewr",
+    "category": "工程交付",
+    "priority": "P0",
+    "score": 97,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "A code review + file viewer sidebar for herdr. Comment on a diff and send back to agent. Inspect diffs, files, and a PR state.",
+    "agentLoop": "代码变更触发 → Agent 收集变更与校验结果 → 标出风险与证据 → 工程师裁决。",
+    "successMetric": "以审查覆盖率、首次通过率和修复时长衡量。",
+    "guardrail": "不得自动合并、发布或修改生产配置。",
+    "tags": [
+      "Code review",
+      "CI",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/persiyanov/herdr-reviewr",
+    "evidenceLabel": "persiyanov/herdr-reviewr · 726 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.259Z"
+  },
+  {
+    "id": "github-josstei-maestro-orchestrate",
+    "title": "工程交付：maestro-orchestrate",
+    "category": "工程交付",
+    "priority": "P0",
+    "score": 97,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Multi-agent orchestration platform for Gemini CLI, Claude Code, Codex, and Qwen Code — 39 specialists, parallel subagents, persistent sessions, and built-in code review, debugging, security, SEO, accessibility, and compliance tools",
+    "agentLoop": "代码变更触发 → Agent 收集变更与校验结果 → 标出风险与证据 → 工程师裁决。",
+    "successMetric": "以审查覆盖率、首次通过率和修复时长衡量。",
+    "guardrail": "不得自动合并、发布或修改生产配置。",
+    "tags": [
+      "Code review",
+      "CI",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/josstei/maestro-orchestrate",
+    "evidenceLabel": "josstei/maestro-orchestrate · 464 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.259Z"
+  },
+  {
+    "id": "github-alibaba-open-code-review",
+    "title": "工程交付：open-code-review",
+    "category": "工程交付",
+    "priority": "P0",
+    "score": 97,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "agentLoop": "代码变更触发 → Agent 收集变更与校验结果 → 标出风险与证据 → 工程师裁决。",
+    "successMetric": "以审查覆盖率、首次通过率和修复时长衡量。",
+    "guardrail": "不得自动合并、发布或修改生产配置。",
+    "tags": [
+      "Code review",
+      "CI",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/alibaba/open-code-review",
+    "evidenceLabel": "alibaba/open-code-review · 36188 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.259Z"
+  },
+  {
+    "id": "github-darrenhinde-openagentscontrol",
+    "title": "工程交付：OpenAgentsControl",
+    "category": "工程交付",
+    "priority": "P0",
+    "score": 97,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "AI agent framework for plan-first development workflows with approval-based execution. Multi-language support (TypeScript, Python, Go, Rust) with automatic testing, code review, and validation built for OpenCode",
+    "agentLoop": "代码变更触发 → Agent 收集变更与校验结果 → 标出风险与证据 → 工程师裁决。",
+    "successMetric": "以审查覆盖率、首次通过率和修复时长衡量。",
+    "guardrail": "不得自动合并、发布或修改生产配置。",
+    "tags": [
+      "Code review",
+      "CI",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/darrenhinde/OpenAgentsControl",
+    "evidenceLabel": "darrenhinde/OpenAgentsControl · 4862 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.259Z"
+  },
+  {
+    "id": "github-kenn-io-roborev",
+    "title": "工程交付：roborev",
+    "category": "工程交付",
+    "priority": "P0",
+    "score": 97,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Continuous background code review database for agents, work faster and smarter with accountability for every line of generated code.",
+    "agentLoop": "代码变更触发 → Agent 收集变更与校验结果 → 标出风险与证据 → 工程师裁决。",
+    "successMetric": "以审查覆盖率、首次通过率和修复时长衡量。",
+    "guardrail": "不得自动合并、发布或修改生产配置。",
+    "tags": [
+      "Code review",
+      "CI",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/kenn-io/roborev",
+    "evidenceLabel": "kenn-io/roborev · 1718 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.259Z"
+  },
+  {
+    "id": "github-mattzcarey-shippie",
+    "title": "工程交付：shippie",
+    "category": "工程交付",
+    "priority": "P0",
+    "score": 97,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "extendable code review and QA agent 🚢",
+    "agentLoop": "代码变更触发 → Agent 收集变更与校验结果 → 标出风险与证据 → 工程师裁决。",
+    "successMetric": "以审查覆盖率、首次通过率和修复时长衡量。",
+    "guardrail": "不得自动合并、发布或修改生产配置。",
+    "tags": [
+      "Code review",
+      "CI",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/mattzcarey/shippie",
+    "evidenceLabel": "mattzcarey/shippie · 2507 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.259Z"
+  },
+  {
+    "id": "github-mukul975-anthropic-cybersecurity-skills",
+    "title": "风险与安全：Anthropic-Cybersecurity-Skills",
+    "category": "风险与安全",
+    "priority": "P0",
+    "score": 96,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+    "agentLoop": "告警或请求触发 → Agent 汇总允许范围内的证据 → 分诊并提交给安全人员。",
+    "successMetric": "以平均分诊时间、有效告警率和证据完整度衡量。",
+    "guardrail": "仅只读访问；不得自行隔离资产、封禁账号或删除证据。",
+    "tags": [
+      "Security",
+      "Evidence",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "evidenceLabel": "mukul975/Anthropic-Cybersecurity-Skills · 32940 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.268Z"
+  },
+  {
+    "id": "github-bytebase-bytebase",
+    "title": "风险与安全：bytebase",
+    "category": "风险与安全",
+    "priority": "P0",
+    "score": 96,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Database governance built for humans and agents — controlling changes and access across every major database.",
+    "agentLoop": "告警或请求触发 → Agent 汇总允许范围内的证据 → 分诊并提交给安全人员。",
+    "successMetric": "以平均分诊时间、有效告警率和证据完整度衡量。",
+    "guardrail": "仅只读访问；不得自行隔离资产、封禁账号或删除证据。",
+    "tags": [
+      "Security",
+      "Evidence",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/bytebase/bytebase",
+    "evidenceLabel": "bytebase/bytebase · 14493 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.268Z"
+  },
+  {
+    "id": "github-piebald-ai-claude-code-system-prompts",
+    "title": "风险与安全：claude-code-system-prompts",
+    "category": "风险与安全",
+    "priority": "P0",
+    "score": 96,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "All parts of Claude Code's system prompt, 27 builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact,  statusline, magic docs, WebFetch, Bash cmd, security review, agent creation).  Updated for each Claude Code version.",
+    "agentLoop": "告警或请求触发 → Agent 汇总允许范围内的证据 → 分诊并提交给安全人员。",
+    "successMetric": "以平均分诊时间、有效告警率和证据完整度衡量。",
+    "guardrail": "仅只读访问；不得自行隔离资产、封禁账号或删除证据。",
+    "tags": [
+      "Security",
+      "Evidence",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "evidenceLabel": "Piebald-AI/claude-code-system-prompts · 12711 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.268Z"
+  },
+  {
+    "id": "github-eosphoros-ai-db-gpt",
+    "title": "风险与安全：DB-GPT",
+    "category": "风险与安全",
+    "priority": "P0",
+    "score": 96,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "open-source agentic AI data assistant for the next generation of AI + Data products.",
+    "agentLoop": "告警或请求触发 → Agent 汇总允许范围内的证据 → 分诊并提交给安全人员。",
+    "successMetric": "以平均分诊时间、有效告警率和证据完整度衡量。",
+    "guardrail": "仅只读访问；不得自行隔离资产、封禁账号或删除证据。",
+    "tags": [
+      "Security",
+      "Evidence",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/eosphoros-ai/DB-GPT",
+    "evidenceLabel": "eosphoros-ai/DB-GPT · 20007 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.268Z"
+  },
+  {
+    "id": "github-affaan-m-ecc",
+    "title": "风险与安全：ECC",
+    "category": "风险与安全",
+    "priority": "P0",
+    "score": 96,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "agentLoop": "告警或请求触发 → Agent 汇总允许范围内的证据 → 分诊并提交给安全人员。",
+    "successMetric": "以平均分诊时间、有效告警率和证据完整度衡量。",
+    "guardrail": "仅只读访问；不得自行隔离资产、封禁账号或删除证据。",
+    "tags": [
+      "Security",
+      "Evidence",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/affaan-m/ECC",
+    "evidenceLabel": "affaan-m/ECC · 261577 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.268Z"
+  },
+  {
+    "id": "github-nearai-ironclaw",
+    "title": "风险与安全：ironclaw",
+    "category": "风险与安全",
+    "priority": "P0",
+    "score": 96,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "IronClaw is an Agent OS focused on privacy, security and extensibility",
+    "agentLoop": "告警或请求触发 → Agent 汇总允许范围内的证据 → 分诊并提交给安全人员。",
+    "successMetric": "以平均分诊时间、有效告警率和证据完整度衡量。",
+    "guardrail": "仅只读访问；不得自行隔离资产、封禁账号或删除证据。",
+    "tags": [
+      "Security",
+      "Evidence",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/nearai/ironclaw",
+    "evidenceLabel": "nearai/ironclaw · 12622 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.268Z"
+  },
+  {
+    "id": "github-nanocoai-nanoclaw",
+    "title": "风险与安全：nanoclaw",
+    "category": "风险与安全",
+    "priority": "P0",
+    "score": 96,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
+    "agentLoop": "告警或请求触发 → Agent 汇总允许范围内的证据 → 分诊并提交给安全人员。",
+    "successMetric": "以平均分诊时间、有效告警率和证据完整度衡量。",
+    "guardrail": "仅只读访问；不得自行隔离资产、封禁账号或删除证据。",
+    "tags": [
+      "Security",
+      "Evidence",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/nanocoai/nanoclaw",
+    "evidenceLabel": "nanocoai/nanoclaw · 30796 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.268Z"
+  },
+  {
+    "id": "github-nvidia-skillspector",
+    "title": "风险与安全：SkillSpector",
+    "category": "风险与安全",
+    "priority": "P0",
+    "score": 96,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+    "agentLoop": "告警或请求触发 → Agent 汇总允许范围内的证据 → 分诊并提交给安全人员。",
+    "successMetric": "以平均分诊时间、有效告警率和证据完整度衡量。",
+    "guardrail": "仅只读访问；不得自行隔离资产、封禁账号或删除证据。",
+    "tags": [
+      "Security",
+      "Evidence",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/NVIDIA/SkillSpector",
+    "evidenceLabel": "NVIDIA/SkillSpector · 17706 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.268Z"
+  },
+  {
     "id": "code-change-verification",
     "title": "代码变更验证与修复建议",
     "category": "工程交付",
@@ -10,9 +346,181 @@
     "agentLoop": "PR 或构建失败触发 → 定位受影响文件 → 执行测试、lint 与类型检查 → 汇总证据 → 人工批准修复或合并。",
     "successMetric": "减少人工排查时间；以首次通过率、回归缺陷率和平均修复时长衡量。",
     "guardrail": "只运行仓库允许的命令；不得自动合并、发布或修改生产配置。",
-    "tags": ["Code review", "CI", "Testing"],
+    "tags": [
+      "Code review",
+      "CI",
+      "Testing"
+    ],
     "evidenceUrl": "https://docs.github.com/en/actions",
     "evidenceLabel": "GitHub Actions 文档"
+  },
+  {
+    "id": "github-cossistantcom-cossistant",
+    "title": "客户运营：cossistant",
+    "category": "客户运营",
+    "priority": "P0",
+    "score": 95,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Open-source, customer support platform with fully customizable AI support agents for developers / startups shipping SaaS.",
+    "agentLoop": "新请求进入 → Agent 分类、补全上下文并建议路由 → 人工发送或升级。",
+    "successMetric": "以首次响应时间、一次解决率和错误升级率衡量。",
+    "guardrail": "退款、隐私、法律和安全事件必须转人工。",
+    "tags": [
+      "Support",
+      "Routing",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/cossistantcom/cossistant",
+    "evidenceLabel": "cossistantcom/cossistant · 722 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.253Z"
+  },
+  {
+    "id": "github-huabeitech-agent-desk",
+    "title": "客户运营：agent-desk",
+    "category": "客户运营",
+    "priority": "P0",
+    "score": 94,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Open-source AI customer support system. AI-first support, human-ready operations.",
+    "agentLoop": "新请求进入 → Agent 分类、补全上下文并建议路由 → 人工发送或升级。",
+    "successMetric": "以首次响应时间、一次解决率和错误升级率衡量。",
+    "guardrail": "退款、隐私、法律和安全事件必须转人工。",
+    "tags": [
+      "Support",
+      "Routing",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/huabeitech/agent-desk",
+    "evidenceLabel": "huabeitech/agent-desk · 246 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.253Z"
+  },
+  {
+    "id": "github-techwithtim-langflow-customer-support-agent",
+    "title": "客户运营：Langflow-Customer-Support-Agent",
+    "category": "客户运营",
+    "priority": "P0",
+    "score": 94,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "GitHub 中的 客户运营 Agent 工作流候选。",
+    "agentLoop": "新请求进入 → Agent 分类、补全上下文并建议路由 → 人工发送或升级。",
+    "successMetric": "以首次响应时间、一次解决率和错误升级率衡量。",
+    "guardrail": "退款、隐私、法律和安全事件必须转人工。",
+    "tags": [
+      "Support",
+      "Routing",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/techwithtim/Langflow-Customer-Support-Agent",
+    "evidenceLabel": "techwithtim/Langflow-Customer-Support-Agent · 224 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.253Z"
+  },
+  {
+    "id": "github-liangdabiao-langgraph-multi-agent-rag-customer-support",
+    "title": "客户运营：langgraph_multi-agent-rag-customer-support",
+    "category": "客户运营",
+    "priority": "P0",
+    "score": 94,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "本项目实现了一个基于多智能体（Multi-Agent）和检索增强生成（Retrieval-Augmented Generation, RAG）技术的客户支持系统。它利用 Python、LangChain 和 LangGraph 构建了一个能够处理各种旅行相关查询的对话式 AI，包括航班预订、租车、酒店预订和行程推荐。还有对接了woocommerce商城进行商品查询，文章查询，表单提交，订单查询等商城功能。",
+    "agentLoop": "新请求进入 → Agent 分类、补全上下文并建议路由 → 人工发送或升级。",
+    "successMetric": "以首次响应时间、一次解决率和错误升级率衡量。",
+    "guardrail": "退款、隐私、法律和安全事件必须转人工。",
+    "tags": [
+      "Support",
+      "Routing",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/liangdabiao/langgraph_multi-agent-rag-customer-support",
+    "evidenceLabel": "liangdabiao/langgraph_multi-agent-rag-customer-support · 325 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.253Z"
+  },
+  {
+    "id": "github-kaymen99-langgraph-email-automation",
+    "title": "客户运营：langgraph-email-automation",
+    "category": "客户运营",
+    "priority": "P0",
+    "score": 94,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Multi AI agents for customer support email automation built with Langchain & Langgraph",
+    "agentLoop": "新请求进入 → Agent 分类、补全上下文并建议路由 → 人工发送或升级。",
+    "successMetric": "以首次响应时间、一次解决率和错误升级率衡量。",
+    "guardrail": "退款、隐私、法律和安全事件必须转人工。",
+    "tags": [
+      "Support",
+      "Routing",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/kaymen99/langgraph-email-automation",
+    "evidenceLabel": "kaymen99/langgraph-email-automation · 274 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.253Z"
+  },
+  {
+    "id": "github-199ocero-filachat",
+    "title": "客户运营：filachat",
+    "category": "客户运营",
+    "priority": "P0",
+    "score": 93,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Filachat is a plugin for integrating real-time customer support chat into your application. Provides tools for both customer and agent chat interfaces, with features for managing and maintaining chat conversations.",
+    "agentLoop": "新请求进入 → Agent 分类、补全上下文并建议路由 → 人工发送或升级。",
+    "successMetric": "以首次响应时间、一次解决率和错误升级率衡量。",
+    "guardrail": "退款、隐私、法律和安全事件必须转人工。",
+    "tags": [
+      "Support",
+      "Routing",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/199ocero/filachat",
+    "evidenceLabel": "199ocero/filachat · 184 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.253Z"
+  },
+  {
+    "id": "github-akj2018-multi-ai-agent-systems-with-crewai",
+    "title": "客户运营：Multi-AI-Agent-Systems-with-crewAI",
+    "category": "客户运营",
+    "priority": "P0",
+    "score": 93,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Automate complex business workflows with our Multi-AI-Agent Systems using crewAI. This framework leverages autonomous, role-specific AI agents to collaboratively perform multi-step tasks, enhancing efficiency and accuracy across various domains. Ideal for applications in resume tailoring, website design, research, customer support, and more.",
+    "agentLoop": "新请求进入 → Agent 分类、补全上下文并建议路由 → 人工发送或升级。",
+    "successMetric": "以首次响应时间、一次解决率和错误升级率衡量。",
+    "guardrail": "退款、隐私、法律和安全事件必须转人工。",
+    "tags": [
+      "Support",
+      "Routing",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/akj2018/Multi-AI-Agent-Systems-with-crewAI",
+    "evidenceLabel": "akj2018/Multi-AI-Agent-Systems-with-crewAI · 168 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.253Z"
+  },
+  {
+    "id": "github-openai-openai-support-agent-demo",
+    "title": "客户运营：openai-support-agent-demo",
+    "category": "客户运营",
+    "priority": "P0",
+    "score": 93,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Demo of a customer support agent interface using NextJS and the OpenAI Responses API with File Search",
+    "agentLoop": "新请求进入 → Agent 分类、补全上下文并建议路由 → 人工发送或升级。",
+    "successMetric": "以首次响应时间、一次解决率和错误升级率衡量。",
+    "guardrail": "退款、隐私、法律和安全事件必须转人工。",
+    "tags": [
+      "Support",
+      "Routing",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/openai/openai-support-agent-demo",
+    "evidenceLabel": "openai/openai-support-agent-demo · 199 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.253Z"
   },
   {
     "id": "support-ticket-triage",
@@ -25,7 +533,11 @@
     "agentLoop": "新工单进入 → 提取主题与风险信号 → 分类、去重、补全上下文 → 分派或生成草稿 → 人工发送与抽检。",
     "successMetric": "缩短首次响应时间，提升一次解决率并降低错误升级率。",
     "guardrail": "涉及退款、隐私、法律或安全事件时必须升级人工；Agent 不直接承诺补偿。",
-    "tags": ["Support", "Routing", "Human-in-the-loop"],
+    "tags": [
+      "Support",
+      "Routing",
+      "Human-in-the-loop"
+    ],
     "evidenceUrl": "https://www.intercom.com/help/en/articles/6780056-fin-ai-agent",
     "evidenceLabel": "Intercom Fin 帮助文档"
   },
@@ -40,9 +552,202 @@
     "agentLoop": "告警触发 → 拉取允许范围内的上下文 → 关联相似事件与资产 → 生成证据时间线 → 安全分析师裁决。",
     "successMetric": "缩短平均分诊时间，提高有效告警占比与调查证据完整度。",
     "guardrail": "仅只读访问获授权的数据源；不得自行隔离资产、封禁账号或删除证据。",
-    "tags": ["Security", "Investigation", "Evidence"],
+    "tags": [
+      "Security",
+      "Investigation",
+      "Evidence"
+    ],
     "evidenceUrl": "https://www.nist.gov/cyberframework",
     "evidenceLabel": "NIST Cybersecurity Framework"
+  },
+  {
+    "id": "github-slothflowlabs-duckle",
+    "title": "数据运营：duckle",
+    "category": "数据运营",
+    "priority": "P1",
+    "score": 89,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Open-source ETL/ELT you deploy on your own servers or cloud. Built on DuckDB: no-code/low-code visual pipelines or SQL, 385 components, dbt, CDC, data quality, reverse ETL, lineage, MCP for AI agents. No vendor cloud, no per-row billing.",
+    "agentLoop": "质量规则失败 → Agent 对比上游变更与历史数据 → 提出影响范围和修复建议 → 负责人审核。",
+    "successMetric": "以恢复时间、重复故障率和影响范围衡量。",
+    "guardrail": "生产环境只读；写入操作必须由数据负责人批准。",
+    "tags": [
+      "Data quality",
+      "Root cause",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/slothflowlabs/duckle",
+    "evidenceLabel": "slothflowlabs/duckle · 1308 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.246Z"
+  },
+  {
+    "id": "github-vercel-labs-agent-browser",
+    "title": "业务运营：agent-browser",
+    "category": "业务运营",
+    "priority": "P1",
+    "score": 88,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Browser automation CLI for AI agents",
+    "agentLoop": "合格请求触发 → Agent 在授权系统中执行低风险步骤 → 异常与高风险动作交接人工。",
+    "successMetric": "以处理时长、成功率和人工接管率衡量。",
+    "guardrail": "支付、删除、权限变更和对外发送必须二次确认。",
+    "tags": [
+      "Browser",
+      "Approvals",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/vercel-labs/agent-browser",
+    "evidenceLabel": "vercel-labs/agent-browser · 42816 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.345Z"
+  },
+  {
+    "id": "github-aipexstudio-aipex",
+    "title": "业务运营：AIPex",
+    "category": "业务运营",
+    "priority": "P1",
+    "score": 88,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "AIPex: AI browser automation assistant, no migration and privacy first. Alternative to Manus Browser Operator、 Claude Chrome and Agent Browser",
+    "agentLoop": "合格请求触发 → Agent 在授权系统中执行低风险步骤 → 异常与高风险动作交接人工。",
+    "successMetric": "以处理时长、成功率和人工接管率衡量。",
+    "guardrail": "支付、删除、权限变更和对外发送必须二次确认。",
+    "tags": [
+      "Browser",
+      "Approvals",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/AIPexStudio/AIPex",
+    "evidenceLabel": "AIPexStudio/AIPex · 1249 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.345Z"
+  },
+  {
+    "id": "github-tencent-browserskill",
+    "title": "业务运营：BrowserSkill",
+    "category": "业务运营",
+    "priority": "P1",
+    "score": 88,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
+    "agentLoop": "合格请求触发 → Agent 在授权系统中执行低风险步骤 → 异常与高风险动作交接人工。",
+    "successMetric": "以处理时长、成功率和人工接管率衡量。",
+    "guardrail": "支付、删除、权限变更和对外发送必须二次确认。",
+    "tags": [
+      "Browser",
+      "Approvals",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/Tencent/BrowserSkill",
+    "evidenceLabel": "Tencent/BrowserSkill · 4898 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.345Z"
+  },
+  {
+    "id": "github-browserwing-browserwing",
+    "title": "业务运营：browserwing",
+    "category": "业务运营",
+    "priority": "P1",
+    "score": 88,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "BrowserWing turns your browser actions into MCP commands Or Claude Skill, allowing AI agents to control browsers efficiently and reliably. Say goodbye to slow, token-heavy LLM interactions — let agents call commands directly for faster automation. Perfect for AI-driven tasks, browser automation, and boosting productivity.",
+    "agentLoop": "合格请求触发 → Agent 在授权系统中执行低风险步骤 → 异常与高风险动作交接人工。",
+    "successMetric": "以处理时长、成功率和人工接管率衡量。",
+    "guardrail": "支付、删除、权限变更和对外发送必须二次确认。",
+    "tags": [
+      "Browser",
+      "Approvals",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/browserwing/browserwing",
+    "evidenceLabel": "browserwing/browserwing · 1413 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.345Z"
+  },
+  {
+    "id": "github-citrolabs-ego-lite",
+    "title": "业务运营：ego-lite",
+    "category": "业务运营",
+    "priority": "P1",
+    "score": 88,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+    "agentLoop": "合格请求触发 → Agent 在授权系统中执行低风险步骤 → 异常与高风险动作交接人工。",
+    "successMetric": "以处理时长、成功率和人工接管率衡量。",
+    "guardrail": "支付、删除、权限变更和对外发送必须二次确认。",
+    "tags": [
+      "Browser",
+      "Approvals",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/citrolabs/ego-lite",
+    "evidenceLabel": "citrolabs/ego-lite · 16165 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.345Z"
+  },
+  {
+    "id": "github-hyperbrowserai-hyperagent",
+    "title": "业务运营：HyperAgent",
+    "category": "业务运营",
+    "priority": "P1",
+    "score": 88,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "AI Browser Automation",
+    "agentLoop": "合格请求触发 → Agent 在授权系统中执行低风险步骤 → 异常与高风险动作交接人工。",
+    "successMetric": "以处理时长、成功率和人工接管率衡量。",
+    "guardrail": "支付、删除、权限变更和对外发送必须二次确认。",
+    "tags": [
+      "Browser",
+      "Approvals",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/hyperbrowserai/HyperAgent",
+    "evidenceLabel": "hyperbrowserai/HyperAgent · 1572 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.345Z"
+  },
+  {
+    "id": "github-skalesapp-skales",
+    "title": "业务运营：skales",
+    "category": "业务运营",
+    "priority": "P1",
+    "score": 88,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Personal AI agent for macOS, Windows, Linux, Android & iOS. Set a goal, it works alone: coding (Skales Code), desktop + browser automation, autonomous scheduled Tasks. Teams of agents and humans across paired desktops. Agent2Agent, MCP, computer use, voice, local LLMs (Ollama), Agent Skills (SKILL.md). 26 AI providers, BYOK. No Docker, no terminal.",
+    "agentLoop": "合格请求触发 → Agent 在授权系统中执行低风险步骤 → 异常与高风险动作交接人工。",
+    "successMetric": "以处理时长、成功率和人工接管率衡量。",
+    "guardrail": "支付、删除、权限变更和对外发送必须二次确认。",
+    "tags": [
+      "Browser",
+      "Approvals",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/skalesapp/skales",
+    "evidenceLabel": "skalesapp/skales · 1899 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.345Z"
+  },
+  {
+    "id": "github-browser-act-skills",
+    "title": "业务运营：skills",
+    "category": "业务运营",
+    "priority": "P1",
+    "score": 88,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Browser automation CLI built for AI agents. Break through anti-bot walls, hand off to humans across platforms when stuck. Parallel multi-task execution, independent multi-session operation, isolated multi-account browsing.",
+    "agentLoop": "合格请求触发 → Agent 在授权系统中执行低风险步骤 → 异常与高风险动作交接人工。",
+    "successMetric": "以处理时长、成功率和人工接管率衡量。",
+    "guardrail": "支付、删除、权限变更和对外发送必须二次确认。",
+    "tags": [
+      "Browser",
+      "Approvals",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/browser-act/skills",
+    "evidenceLabel": "browser-act/skills · 5954 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.345Z"
   },
   {
     "id": "document-to-workflow",
@@ -55,7 +760,11 @@
     "agentLoop": "上传或更新文档 → 提取关键字段和规则 → 标出不确定项与引用位置 → 人工确认 → 写入目标系统。",
     "successMetric": "降低录入耗时与遗漏率，衡量字段准确率和人工修改率。",
     "guardrail": "保留来源页码与引用；合同解释、法律结论和最终写入必须由授权人员确认。",
-    "tags": ["Extraction", "Operations", "Review"],
+    "tags": [
+      "Extraction",
+      "Operations",
+      "Review"
+    ],
     "evidenceUrl": "https://platform.openai.com/docs/guides/structured-outputs",
     "evidenceLabel": "Structured Outputs 文档"
   },
@@ -70,7 +779,11 @@
     "agentLoop": "会议创建 → 汇总允许的数据源 → 生成带来源的简报与提问建议 → 销售确认 → 用于会前准备。",
     "successMetric": "提高准备覆盖率、跟进及时率和有效会议转化率。",
     "guardrail": "不得从非授权来源抓取个人数据；简报不得替代 CRM 中的人工事实核验。",
-    "tags": ["Sales", "Research", "Briefing"],
+    "tags": [
+      "Sales",
+      "Research",
+      "Briefing"
+    ],
     "evidenceUrl": "https://www.salesforce.com/resources/articles/sales-ai/",
     "evidenceLabel": "Salesforce Sales AI 概览"
   },
@@ -85,9 +798,160 @@
     "agentLoop": "质量规则失败 → 对比历史与上游变更 → 生成异常说明、影响范围和修复 SQL 草案 → 数据负责人审核执行。",
     "successMetric": "缩短异常恢复时间，降低重复故障与错误数据影响范围。",
     "guardrail": "Agent 只能读取生产数据并在隔离环境生成建议；写操作必须由数据负责人批准。",
-    "tags": ["Data quality", "Root cause", "SQL"],
+    "tags": [
+      "Data quality",
+      "Root cause",
+      "SQL"
+    ],
     "evidenceUrl": "https://docs.getdbt.com/docs/build/data-tests",
     "evidenceLabel": "dbt 数据测试文档"
+  },
+  {
+    "id": "github-unknown-333-awesome-data-engineering-skills",
+    "title": "数据运营：awesome-data-engineering-skills",
+    "category": "数据运营",
+    "priority": "P1",
+    "score": 84,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "36 data-engineering skills for AI coding agents — dbt, Airflow, Dagster, Prefect, Spark, Snowflake, BigQuery, Databricks, Kafka, Iceberg. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with idempotency, backfill, and data-quality know-how. Runs in Claude Code, Cursor, Codex, Copilot, Gemini CLI and more.",
+    "agentLoop": "质量规则失败 → Agent 对比上游变更与历史数据 → 提出影响范围和修复建议 → 负责人审核。",
+    "successMetric": "以恢复时间、重复故障率和影响范围衡量。",
+    "guardrail": "生产环境只读；写入操作必须由数据负责人批准。",
+    "tags": [
+      "Data quality",
+      "Root cause",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/Unknown-333/awesome-data-engineering-skills",
+    "evidenceLabel": "Unknown-333/awesome-data-engineering-skills · 18 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.246Z"
+  },
+  {
+    "id": "github-antonbarr-data-dqt",
+    "title": "数据运营：dqt",
+    "category": "数据运营",
+    "priority": "P1",
+    "score": 84,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "A Data Quality Tool for Agentic BI that tells you the what and the why",
+    "agentLoop": "质量规则失败 → Agent 对比上游变更与历史数据 → 提出影响范围和修复建议 → 负责人审核。",
+    "successMetric": "以恢复时间、重复故障率和影响范围衡量。",
+    "guardrail": "生产环境只读；写入操作必须由数据负责人批准。",
+    "tags": [
+      "Data quality",
+      "Root cause",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/antonbarr-data/dqt",
+    "evidenceLabel": "antonbarr-data/dqt · 12 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.246Z"
+  },
+  {
+    "id": "github-shalintripathi-saas-marketing-agents",
+    "title": "数据运营：saas-marketing-agents",
+    "category": "数据运营",
+    "priority": "P1",
+    "score": 84,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "AI marketing agents for Claude Code - B2B SaaS marketing team: 82 agents + 19 skills — SEO/AEO/GEO, content/editorial ops, customer academy, paid media, email, PLG, interactive demos, chatbots, pricing, ABM, product marketing, sales enablement, presales, analytics/martech, GTM data quality, demand planning, CATALYST. MIT; Cursor, Copilot, Windsurf.",
+    "agentLoop": "质量规则失败 → Agent 对比上游变更与历史数据 → 提出影响范围和修复建议 → 负责人审核。",
+    "successMetric": "以恢复时间、重复故障率和影响范围衡量。",
+    "guardrail": "生产环境只读；写入操作必须由数据负责人批准。",
+    "tags": [
+      "Data quality",
+      "Root cause",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/shalintripathi/saas-marketing-agents",
+    "evidenceLabel": "shalintripathi/saas-marketing-agents · 14 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.246Z"
+  },
+  {
+    "id": "github-balaji-r-05-visa-hackathon",
+    "title": "数据运营：visa-hackathon",
+    "category": "数据运营",
+    "priority": "P1",
+    "score": 84,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "An Agentic AI framework that combines deterministic rules with LLM reasoning for automated data quality auditing and compliance mapping.",
+    "agentLoop": "质量规则失败 → Agent 对比上游变更与历史数据 → 提出影响范围和修复建议 → 负责人审核。",
+    "successMetric": "以恢复时间、重复故障率和影响范围衡量。",
+    "guardrail": "生产环境只读；写入操作必须由数据负责人批准。",
+    "tags": [
+      "Data quality",
+      "Root cause",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/Balaji-R-05/visa-hackathon",
+    "evidenceLabel": "Balaji-R-05/visa-hackathon · 10 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.246Z"
+  },
+  {
+    "id": "github-863683348-dsh-plugin-finance-data",
+    "title": "数据运营：dsh-plugin-finance-data",
+    "category": "数据运营",
+    "priority": "P1",
+    "score": 83,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "Finance data toolkit for DeepSeek Harness agents: number/currency formatting (incl. Chinese wan/yi units), return & CAGR math, valuation and profitability ratios, PV/FV, risk metrics, and a data-quality checklist",
+    "agentLoop": "质量规则失败 → Agent 对比上游变更与历史数据 → 提出影响范围和修复建议 → 负责人审核。",
+    "successMetric": "以恢复时间、重复故障率和影响范围衡量。",
+    "guardrail": "生产环境只读；写入操作必须由数据负责人批准。",
+    "tags": [
+      "Data quality",
+      "Root cause",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/863683348/dsh-plugin-finance-data",
+    "evidenceLabel": "863683348/dsh-plugin-finance-data · 5 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.246Z"
+  },
+  {
+    "id": "github-evgeniimatveev-mcp-data-quality-agent",
+    "title": "数据运营：mcp-data-quality-agent",
+    "category": "数据运营",
+    "priority": "P1",
+    "score": 83,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "MCP server giving Claude read-only access to 5 databases — 20 data quality tools, natural language analytics, zero SQL required",
+    "agentLoop": "质量规则失败 → Agent 对比上游变更与历史数据 → 提出影响范围和修复建议 → 负责人审核。",
+    "successMetric": "以恢复时间、重复故障率和影响范围衡量。",
+    "guardrail": "生产环境只读；写入操作必须由数据负责人批准。",
+    "tags": [
+      "Data quality",
+      "Root cause",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/evgeniimatveev/mcp-data-quality-agent",
+    "evidenceLabel": "evgeniimatveev/mcp-data-quality-agent · 7 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.246Z"
+  },
+  {
+    "id": "github-dungnotnull-synthetic-data-quality-qc-agent-skill",
+    "title": "数据运营：synthetic-data-quality-qc-agent-skill",
+    "category": "数据运营",
+    "priority": "P1",
+    "score": 83,
+    "frequency": "公开工作流信号；待内部验证",
+    "summary": "🛡️ A deterministic QC harness for synthetic data. Audits datasets for statistical fidelity, downstream utility, and privacy leakage using Differential Privacy and TSTR frameworks. 📊",
+    "agentLoop": "质量规则失败 → Agent 对比上游变更与历史数据 → 提出影响范围和修复建议 → 负责人审核。",
+    "successMetric": "以恢复时间、重复故障率和影响范围衡量。",
+    "guardrail": "生产环境只读；写入操作必须由数据负责人批准。",
+    "tags": [
+      "Data quality",
+      "Root cause",
+      "GitHub discovery"
+    ],
+    "evidenceUrl": "https://github.com/dungnotnull/synthetic-data-quality-qc-agent-skill",
+    "evidenceLabel": "dungnotnull/synthetic-data-quality-qc-agent-skill · 5 stars",
+    "source": "github-discovery",
+    "discoveredAt": "2026-09-18T12:53:56.246Z"
   },
   {
     "id": "browser-backoffice-operations",
@@ -100,7 +964,11 @@
     "agentLoop": "合格请求触发 → 导航至已授权系统 → 读取与填写字段 → 校验结果 → 低风险操作执行，高风险操作请求确认。",
     "successMetric": "减少单笔处理时长，追踪成功率、人工接管率和返工率。",
     "guardrail": "支付、删除、对外发送和权限变更必须二次确认；每一步保留审计日志。",
-    "tags": ["Browser", "Back office", "Approvals"],
+    "tags": [
+      "Browser",
+      "Back office",
+      "Approvals"
+    ],
     "evidenceUrl": "https://playwright.dev/docs/intro",
     "evidenceLabel": "Playwright 文档"
   },
@@ -115,7 +983,11 @@
     "agentLoop": "会议结束 → 提取行动项与引用片段 → 指派建议负责人 → 参会者确认 → 同步至项目管理系统。",
     "successMetric": "提升行动项确认率、按时完成率与会后跟进速度。",
     "guardrail": "参会者确认前不应把推断的承诺或负责人写入正式系统。",
-    "tags": ["Meetings", "Project management", "Follow-up"],
+    "tags": [
+      "Meetings",
+      "Project management",
+      "Follow-up"
+    ],
     "evidenceUrl": "https://www.atlassian.com/software/confluence/templates/meeting-notes",
     "evidenceLabel": "Atlassian 会议记录模板"
   }

@@ -50,6 +50,12 @@ npm run build
 
 条目由维护者审阅和更新。公开资料可以说明某种工作流的存在，但不等于对效果、安全性或商业回报的背书；在提升优先级前，仍应完成本组织内的验证。
 
+### 公开任务发现器
+
+`npm run discover` 会检索 GitHub 上的公开 Agent 工作流，覆盖工程交付、客户运营、浏览器操作、安全和数据质量五类搜索信号。它排除 fork 与归档仓库，保留仓库链接和 Stars 作为公开采用信号，并将候选映射为任务闭环、成功指标和安全边界；同一仓库只保留分数更高的候选。
+
+[Discover public Agent tasks](.github/workflows/discover-tasks.yml) 工作流每周一运行，也可在 Actions 页面手动运行。它只使用 GitHub Actions 的临时 Token，不会把凭据写入网站。该发现器用于寻找**公开可行性信号**，不能替代接入工单、Jira、CRM、日志或 SOP 后的内部价值评估。
+
 ## 提交任务机会
 
 点击网站中的“提交任务机会”，或在 GitHub 创建 Issue。提交应包含：
