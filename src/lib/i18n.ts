@@ -3,6 +3,11 @@ export const english: Record<string, string> = {
   "Agent Tasks · 高价值任务雷达": "Agent Tasks · High-Value Task Radar",
   "Agent 任务价值筛选示意": "How Agent task value is triaged",
   "Agent 可接手的环节": "WHERE THE AGENT CAN HELP",
+  "提交任务机会": "Submit task opportunity",
+  "说明任务如何触发、Agent 如何闭环执行，以及人工确认边界。":
+    "Explain the trigger, the Agent execution loop, and the human-approval boundary.",
+  "一句话，这个 Agent 任务要完成什么？": "In one sentence, what should this Agent task accomplish?",
+  "Agent 如何执行、验证并安全退出？": "How does the Agent execute, verify, and exit safely?",
   "从可验证的开源实践反推任务机会。": "Turn verifiable open-source practice into task opportunities.",
   "任务优先级": "Task priority",
   "任务机会": "Task opportunities",

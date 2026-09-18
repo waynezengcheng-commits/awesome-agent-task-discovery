@@ -708,7 +708,7 @@ function App() {
           </a>
           <button className="button dark submit-top" onClick={openSubmission}>
             <Plus size={16} />
-            <span>{t("提交项目")}</span>
+            <span>{t("提交任务机会")}</span>
           </button>
         </div>
       </header>
@@ -873,7 +873,7 @@ function App() {
                 {t("把你的下一步，分享给大家。")}
               </p>
               <button onClick={openSubmission}>
-                {t("提交到雷达")} <ArrowUpRight size={15} />
+                {t("提交任务机会")} <ArrowUpRight size={15} />
               </button>
             </div>
             <a
@@ -1059,7 +1059,7 @@ function App() {
                     <div className="decision-block">
                       <div>
                         <Zap size={13} fill="currentColor" />
-                        <span>{t("JEV 在这里做什么")}</span>
+                      <span>{t("Agent 可接手的环节")}</span>
                       </div>
                       <p>{projectText(p, "jevDecisionPoint")}</p>
                     </div>
@@ -1200,11 +1200,11 @@ function App() {
       {modal === "submit" && (
         <Modal
           locale={locale}
-          title={t("把你的项目带上雷达")}
+          title={t("提交任务机会")}
           onClose={() => setModal(null)}
         >
           <p className="modal-intro">
-            {t("让大家看懂你做了什么，以及 Jev 在哪一步帮上了忙。")}
+            {t("说明任务如何触发、Agent 如何闭环执行，以及人工确认边界。")}
           </p>
           <form
             ref={submissionFormRef}
@@ -1247,7 +1247,7 @@ function App() {
             </div>
             <div className="form-field">
               <label htmlFor="submission-purpose">
-                {t("一句话，它能做什么？")}
+                {t("一句话，这个 Agent 任务要完成什么？")}
               </label>
               <input
                 id="submission-purpose"
@@ -1270,7 +1270,7 @@ function App() {
             </div>
             <div className="form-field">
               <label htmlFor="submission-decision">
-                {t("Jev 负责哪一个判断？")}
+                {t("Agent 如何执行、验证并安全退出？")}
               </label>
               <textarea
                 id="submission-decision"
