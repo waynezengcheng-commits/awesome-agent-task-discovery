@@ -1,4 +1,4 @@
-const ISSUE_URL = "https://github.com/logicrw/awesome-jev-projects/issues/new";
+const ISSUE_URL = "https://github.com/waynezengcheng-commits/awesome-agent-task-discovery/issues/new";
 const OWNER = /^[a-z\d](?:[a-z\d-]{0,37}[a-z\d])?$/i;
 const REPOSITORY = /^[a-z\d_.-]{1,100}$/i;
 
@@ -101,12 +101,12 @@ export function validateSubmission({ repo, purpose, decision }, locale = "zh") {
 /** Build an encoded issue URL from values returned by a successful validation. */
 export function createIssueUrl(values, locale = "zh") {
   const url = new URL(ISSUE_URL);
-  url.searchParams.set("title", `[Project] ${values.repo.split("/").pop()}`);
+  url.searchParams.set("title", `[Task opportunity] ${values.repo.split("/").pop()}`);
   url.searchParams.set(
     "body",
     locale === "en"
-      ? `## Project repository\n${values.repo}\n\n## What it does\n${values.purpose}\n\n## Where Jev makes decisions\n${values.decision}\n\n## Evidence\nPlease add links to the README or implementation, plus test conditions for any performance claims.`
-      : `## 项目仓库\n${values.repo}\n\n## 一句话介绍\n${values.purpose}\n\n## Jev 在哪里做决策\n${values.decision}\n\n## 证据\n请补充 README 或实现代码链接，以及性能数据的测试条件。`,
+      ? `## Evidence repository\n${values.repo}\n\n## Agent task\n${values.purpose}\n\n## Execution loop and value\n${values.decision}\n\n## Evidence\nAdd README or implementation links, the expected measurable outcome, and any safety or human-approval boundary.`
+      : `## 证据仓库\n${values.repo}\n\n## Agent 任务\n${values.purpose}\n\n## 执行闭环与价值\n${values.decision}\n\n## 证据\n请补充 README 或实现代码链接、可衡量的预期结果，以及安全或人工确认边界。`,
   );
   return url.toString();
 }

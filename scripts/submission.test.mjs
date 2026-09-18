@@ -143,9 +143,9 @@ test("issue URL keeps Chinese and query-like user input inside its encoded body"
   const url = new URL(createIssueUrl(values));
   assert.equal(
     url.origin + url.pathname,
-    "https://github.com/logicrw/awesome-jev-projects/issues/new",
+    "https://github.com/waynezengcheng-commits/awesome-agent-task-discovery/issues/new",
   );
-  assert.equal(url.searchParams.get("title"), "[Project] repo");
+  assert.equal(url.searchParams.get("title"), "[Task opportunity] repo");
   assert.deepEqual([...url.searchParams.keys()], ["title", "body"]);
   assert.equal(url.hash, "");
   assert.ok(url.searchParams.get("body").includes(values.repo));
@@ -195,14 +195,14 @@ test("English issue body localizes headings and evidence guidance without changi
   const url = new URL(createIssueUrl(values, "en"));
   assert.equal(
     url.origin + url.pathname,
-    "https://github.com/logicrw/awesome-jev-projects/issues/new",
+    "https://github.com/waynezengcheng-commits/awesome-agent-task-discovery/issues/new",
   );
-  assert.equal(url.searchParams.get("title"), "[Project] repo");
+  assert.equal(url.searchParams.get("title"), "[Task opportunity] repo");
   assert.deepEqual([...url.searchParams.keys()], ["title", "body"]);
   assert.equal(url.hash, "");
   assert.equal(
     url.searchParams.get("body"),
-    `## Project repository\n${values.repo}\n\n## What it does\n${values.purpose}\n\n## Where Jev makes decisions\n${values.decision}\n\n## Evidence\nPlease add links to the README or implementation, plus test conditions for any performance claims.`,
+    `## Evidence repository\n${values.repo}\n\n## Agent task\n${values.purpose}\n\n## Execution loop and value\n${values.decision}\n\n## Evidence\nAdd README or implementation links, the expected measurable outcome, and any safety or human-approval boundary.`,
   );
   assert.equal(createIssueUrl(values), createIssueUrl(values, "zh"));
 });

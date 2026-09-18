@@ -89,6 +89,24 @@ const categoryInfo: Record<string, { label: string; icon: LucideIcon }> = {
 };
 const format = (n: number | null) =>
   n === null ? "—" : new Intl.NumberFormat("en-US").format(n);
+/** Transparent task triage: category impact + public adoption + source evidence. */
+const opportunityScore = (project: Project) => {
+  const impact: Record<string, number> = {
+    "Security & Guardrails": 92,
+    "Codebase & Graph Pathfinding": 90,
+    "Browser & OS Action": 89,
+    "Routing & Cost Optimization": 87,
+    "Data & Search": 85,
+    "Voice & Conversation": 81,
+    "MCP & Integrations": 80,
+    "Context GC & Filter": 79,
+    "Evaluation & Observability": 78,
+  };
+  const maturity = Math.min(6, Math.floor(Math.log10((project.stars ?? 0) + 1) * 2));
+  return Math.min(99, (impact[project.category] ?? 74) + maturity + (project.evidence?.length ? 2 : 0));
+};
+const opportunityTier = (project: Project) =>
+  opportunityScore(project) >= 90 ? "P0" : opportunityScore(project) >= 82 ? "P1" : "P2";
 const date = (s: string | null | undefined, locale: Locale) =>
   s
     ? new Date(s).toLocaleString(locale === "zh" ? "zh-CN" : "en-US", {
@@ -272,14 +290,14 @@ function App() {
     document.documentElement.lang = locale === "zh" ? "zh-CN" : "en";
     document.title =
       locale === "zh"
-        ? "Awesome Jev — 拿到 Jev，然后呢？"
-        : "Awesome Jev — You have Jev. Now what?";
+        ? "Agent 任务雷达 — 发现值得自动化的工作"
+        : "Agent Opportunity Radar — Find work worth automating";
     const description = document.querySelector('meta[name="description"]');
     description?.setAttribute(
       "content",
       locale === "zh"
-        ? "收集社区真跑起来了的 Jev 开源项目。看别人怎么拿它选哪个、打几分、下一步干什么。"
-        : "Explore open-source projects built with Jev. See how developers use it to choose, score, and decide what happens next.",
+        ? "从可验证的开源实践中发现高价值 Agent 任务：高频、可执行、可衡量，并附来源证据。"
+        : "Discover high-value Agent work from verifiable open-source practice: repeatable, executable, measurable, and source-backed.",
     );
   }, [locale]);
   const [projects, setProjects] = useState<Project[]>([]);
@@ -329,7 +347,7 @@ function App() {
   const [category, setCategory] = useState("all");
   const [tag, setTag] = useState("all");
   const [stars, setStars] = useState("all");
-  const [sort, setSort] = useState("stars");
+  const [sort, setSort] = useState("value");
   const [saved, setSaved] = useState<string[]>(getSaved);
   const [onlySaved, setOnlySaved] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
@@ -432,10 +450,10 @@ function App() {
     if (!context?.registerTool) return;
     const lifecycle = new AbortController();
     const tool = {
-      name: "search_jev_projects",
-      title: "Search Jev projects",
+      name: "search_agent_opportunities",
+      title: "Search Agent task opportunities",
       description:
-        "Search the same project dataset shown on this page. Returns project summaries and source links; does not change filters or bookmarks.",
+        "Search source-backed Agent task opportunities. Returns task evidence and a transparent priority score; does not change filters or bookmarks.",
       inputSchema: {
         type: "object",
         properties: { query: { type: "string" }, category: { type: "string" } },
@@ -461,6 +479,8 @@ function App() {
               name: p.name,
               summary: projectText(p, "plainSummary"),
               decision: projectText(p, "jevDecisionPoint"),
+              priority: opportunityTier(p),
+              score: opportunityScore(p),
               url: p.url,
             })),
           snapshotAt: updatedAt,
@@ -501,6 +521,8 @@ function App() {
           : sort === "updated"
             ? Date.parse(b.lastCommitAt ?? "1970") -
               Date.parse(a.lastCommitAt ?? "1970")
+          : sort === "value"
+            ? opportunityScore(b) - opportunityScore(a)
             : (b.stars ?? -1) - (a.stars ?? -1),
       );
   }, [
@@ -629,7 +651,7 @@ function App() {
           <span className="brand-icon">
             <Zap size={23} fill="currentColor" />
           </span>
-          awesome<span className="brand-jev">jev</span>
+          agent<span className="brand-jev">tasks</span>
           <span className="beta">RADAR</span>
         </a>
         <div className="header-utilities">
@@ -675,7 +697,7 @@ function App() {
         <div className="header-actions">
           <a
             className="button github-star"
-            href="https://github.com/logicrw/awesome-jev-projects"
+            href="https://github.com/waynezengcheng-commits/awesome-agent-task-discovery"
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t("Star on GitHub（新标签页打开）")}
@@ -696,7 +718,7 @@ function App() {
             <Sparkles size={16} aria-hidden="true" />
             <p>
               <strong>{t("推荐位：")}</strong>{" "}
-              {t("想在此向全网 Jev 开发者展示你的工具？")}
+              {t("想让团队发现你验证过的 Agent 任务？")}
             </p>
           </div>
           <a
@@ -710,26 +732,26 @@ function App() {
         </aside>
         <section className="hero" aria-labelledby="hero-heading">
           <div className="hero-copy">
-            <h1 id="hero-heading">{t("拿到 Jev，然后呢？")}</h1>
+            <h1 id="hero-heading">{t("先找到最值得交给 Agent 的工作。")}</h1>
             <p>
-              {t("收集社区里真跑起来了的开源项目。")}
+              {t("从可验证的开源实践反推任务机会。")}
               <br className="mobile-break" />{" "}
-              {t("看看别人怎么拿它做选择、省成本和跑高频。")}
+              {t("优先关注高频、高影响、能闭环验证的工作流。")}
             </p>
             <a
               className="text-link"
-              href="https://typesafe.ai/"
+              href="#explore"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t("认识 TypeSafe 的决策模型")}
+              {t("查看任务筛选方法")}
               <ArrowUpRight size={15} />
             </a>
           </div>
-          <div className="decision-canvas" aria-label={t("Jev 决策机制示意")}>
+          <div className="decision-canvas" aria-label={t("Agent 任务价值筛选示意")}>
             <div className="canvas-heading">
-              <span>INPUT → DECISION</span>
-              <span className="mono">jev.choice()</span>
+              <span>SIGNAL → PRIORITY</span>
+              <span className="mono">task.score()</span>
             </div>
             <div className="decision-flow">
               <div className="flow-in">
@@ -739,7 +761,7 @@ function App() {
               <span className="connector" />
               <div className="jev-node">
                 <Zap size={23} fill="currentColor" />
-                <strong>jev</strong>
+                <strong>fit</strong>
               </div>
               <span className="connector" />
               <div className="flow-out">
@@ -758,7 +780,7 @@ function App() {
               </div>
             </div>
             <div className="canvas-footer">
-              {t("把重活留给大模型，把选择题交给 Jev。")}
+              {t("用证据筛选任务，再决定 Agent 应该接手什么。")}
               <ArrowRight size={14} />
             </div>
           </div>
@@ -768,7 +790,7 @@ function App() {
             <span className="stat-value">
               {projects.length.toString().padStart(2, "0")}
             </span>
-            <span>{t("收录项目")}</span>
+            <span>{t("任务机会")}</span>
           </div>
           <div>
             <span className="stat-value">
@@ -795,7 +817,7 @@ function App() {
           <div className="ticker">
             <span className="ticker-label">
               <Sparkles size={14} />
-              {t("热门项目")}
+              {t("高信号机会")}
             </span>
             <div className="ticker-items">
               {trending.map((p) => (
@@ -822,7 +844,7 @@ function App() {
                 onClick={() => setCategory("all")}
               >
                 <Layers size={16} />
-                <span>{t("全部项目")}</span>
+                <span>{t("全部机会")}</span>
                 <b>{projects.length}</b>
               </button>
               {categories.map((c) => {
@@ -846,7 +868,7 @@ function App() {
               </span>
               <h3>{t("让好项目被看见")}</h3>
               <p>
-                {t("在做一个 Jev 项目？")}
+                {t("验证过一个 Agent 任务？")}
                 <br />
                 {t("把你的下一步，分享给大家。")}
               </p>
@@ -856,11 +878,11 @@ function App() {
             </div>
             <a
               className="side-source"
-              href="https://github.com/logicrw/awesome-jev-projects"
+              href="https://github.com/waynezengcheng-commits/awesome-agent-task-discovery"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t("Awesome Jev · 开源项目雷达")} <ExternalLink size={12} />
+              {t("Agent Tasks · 高价值任务雷达")} <ExternalLink size={12} />
             </a>
           </aside>
           <div className="results">
@@ -873,7 +895,7 @@ function App() {
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder={t(
-                    "搜项目、作者，或场景（如：省成本、浏览器、9Hz、上下文）...",
+                    "搜任务、工作流或能力（如：代码审查、浏览器、路由、安全）...",
                   )}
                 />
                 {query ? (
@@ -942,7 +964,7 @@ function App() {
                 {onlySaved
                   ? t("我的收藏")
                   : category === "all"
-                    ? t("发现项目")
+                    ? t("发现任务")
                     : label(category)}
                 <span>{visible.length}</span>
               </h2>
@@ -953,6 +975,7 @@ function App() {
                   value={sort}
                   onChange={(e) => setSort(e.target.value)}
                 >
+                  <option value="value">{t("最高任务价值")}</option>
                   <option value="stars">{t("最多 Stars")}</option>
                   <option value="created">{t("最近创建")}</option>
                   <option value="updated">{t("最近更新")}</option>
@@ -1028,6 +1051,7 @@ function App() {
                       {p.summarySource === "readme-extractive" && (
                         <span className="auto-label">{t("自动提炼")}</span>
                       )}
+                      <span className="auto-label">{opportunityTier(p)} · {opportunityScore(p)}</span>
                     </div>
                     <p className="plain-summary">
                       {projectText(p, "plainSummary")}
@@ -1155,16 +1179,16 @@ function App() {
         <footer className="footer">
           <a
             className="footer-brand"
-            href="https://github.com/logicrw/awesome-jev-projects"
+            href="https://github.com/waynezengcheng-commits/awesome-agent-task-discovery"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Zap size={16} />
-            {t("Awesome Jev · 开源项目雷达")}
+            {t("Agent Tasks · 高价值任务雷达")}
           </a>
           <span>{t("GitHub 数据定时同步")}</span>
           <a
-            href="https://github.com/logicrw/awesome-jev-projects"
+            href="https://github.com/waynezengcheng-commits/awesome-agent-task-discovery"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -1309,7 +1333,7 @@ function App() {
           <div className="decision-block">
             <div>
               <Zap size={14} />
-              {t("JEV 决策点")}
+              {t("Agent 可接手的环节")}
             </div>
             <p>{projectText(active, "jevDecisionPoint")}</p>
           </div>
@@ -1317,6 +1341,10 @@ function App() {
             {projectText(active, "highlightBenefit")}
           </p>
           <dl className="detail-grid">
+            <div>
+              <dt>{t("任务优先级")}</dt>
+              <dd>{opportunityTier(active)} · {opportunityScore(active)} / 99</dd>
+            </div>
             <div>
               <dt>Stars / Forks</dt>
               <dd>

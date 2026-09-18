@@ -1,6 +1,6 @@
-name: Submit a Jev project
-description: Share an open-source tool that uses Jev
-title: "[Project] "
+name: Submit an Agent task opportunity
+description: Share evidence for a valuable, automatable Agent task
+title: "[Task opportunity] "
 labels: []
 body:
   - type: input
@@ -13,14 +13,14 @@ body:
   - type: textarea
     id: purpose
     attributes:
-      label: What does it do?
-      description: Describe it in plain language.
+      label: What high-value task can an Agent complete?
+      description: Describe the trigger, outcome, and who benefits in plain language.
     validations:
       required: true
   - type: textarea
     id: decision
     attributes:
-      label: Where does Jev make a decision?
-      description: Include a link to the implementation or README and benchmark conditions, if any.
+      label: What is the execution loop, proof of value, and human boundary?
+      description: Include implementation or README links, measurable success criteria, and any approval or safety requirement.
     validations:
       required: true

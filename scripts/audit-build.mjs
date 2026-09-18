@@ -1,8 +1,9 @@
 import { readFile, readdir } from "node:fs/promises";
 import { resolve, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import assert from "node:assert/strict";
 import { publicFields } from "./prepare-public-data.mjs";
-const base = resolve(new URL("../dist/", import.meta.url).pathname);
+const base = resolve(fileURLToPath(new URL("../dist/", import.meta.url)));
 const forbidden =
   /\b(?:github_pat_[A-Za-z0-9_]{30,}|gh[pousr]_[A-Za-z0-9]{30,}|sk-(?:proj-|ant-)?[A-Za-z0-9_-]{24,}|AIza[A-Za-z0-9_-]{35})\b|-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----|\b(?:GITHUB_TOKEN|GH_TOKEN)\b|\/Users\/[^\/\s]+\/(?:Documents|Projects|\.codex)/;
 const textExtensions = /\.(?:html|json|js|css|svg|txt)$/;
@@ -59,10 +60,10 @@ for (const ref of html.matchAll(/(?:src|href)="([^"]+)"/g)) {
   const url = ref[1];
   if (url.startsWith("http")) continue;
   assert.ok(
-    url.startsWith("/awesome-jev-projects/"),
+    url.startsWith("/awesome-agent-task-discovery/"),
     `Wrong Pages base: ${url}`,
   );
-  await readFile(join(base, url.slice("/awesome-jev-projects/".length)));
+  await readFile(join(base, url.slice("/awesome-agent-task-discovery/".length)));
 }
 const image = await readFile(join(base, "og-card.png"));
 assert.equal(image.readUInt32BE(16), 1200);

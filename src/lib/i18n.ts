@@ -1,5 +1,23 @@
 export type Locale = "zh" | "en";
 export const english: Record<string, string> = {
+  "Agent Tasks · 高价值任务雷达": "Agent Tasks · High-Value Task Radar",
+  "Agent 任务价值筛选示意": "How Agent task value is triaged",
+  "Agent 可接手的环节": "WHERE THE AGENT CAN HELP",
+  "从可验证的开源实践反推任务机会。": "Turn verifiable open-source practice into task opportunities.",
+  "任务优先级": "Task priority",
+  "任务机会": "Task opportunities",
+  "优先关注高频、高影响、能闭环验证的工作流。": "Prioritize high-frequency, high-impact workflows with verifiable closed loops.",
+  "先找到最值得交给 Agent 的工作。": "Find the work most worth handing to an Agent.",
+  "全部机会": "All opportunities",
+  "发现任务": "Discover tasks",
+  "想让团队发现你验证过的 Agent 任务？": "Want teams to discover an Agent task you have validated?",
+  "查看任务筛选方法": "See the task triage method",
+  "验证过一个 Agent 任务？": "Validated an Agent task?",
+  "最高任务价值": "Highest task value",
+  "搜任务、工作流或能力（如：代码审查、浏览器、路由、安全）...":
+    "Search tasks, workflows, or capabilities: code review, browser, routing, security…",
+  "用证据筛选任务，再决定 Agent 应该接手什么。": "Use evidence to triage tasks, then decide what an Agent should own.",
+  "高信号机会": "High-signal opportunities",
   关闭弹窗: "Close dialog",
   主导航: "Main navigation",
   探索项目: "Explore",
