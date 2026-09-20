@@ -103,10 +103,10 @@ const generated = ranked.slice(0, 1000).map(({ repo, queries }) => {
   const value = valueSignals(repo.description ?? '', body);
   return {
     id: `github-${repo.full_name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
-    title: `${plan[0]}：${repo.name}`,
+    title: `${value.scene}｜${value.taskLabel}`,
     category: plan[0], priority: value.valueStatus, score: value.valueSignalScore, technicalScore: feasibility,
     frequency: "公开技术信号；待内部业务验证",
-    summary: repo.description?.trim() || `公开 Agent 候选仓库：${repo.full_name}`,
+    summary: `${value.scene}中的${value.taskLabel}：处理${value.modalityLabel.join('、') || '文本'}信息，候选执行面包括${surfaces.join('、') || '相关工具'}。`,
     agentLoop: "公开候选：请查看来源证据，确认输入、Agent 动作、输出与人工边界后再建立试点。",
     successMetric: "先验证任务完成率、人工接管率、处理时长与失败成本。",
     guardrail: "公开项目只能证明技术线索；高影响动作必须在受控环境中人工确认。",
