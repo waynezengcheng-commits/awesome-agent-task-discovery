@@ -1,0 +1,27 @@
+{
+  "name": "awesome-agent-task-discovery",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build && node scripts/finalize-pages.mjs && node scripts/audit-build.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "discover": "node scripts/discover-tasks.mjs",
+    "test": "tsc -b --noEmit && node --test scripts/value-signals.test.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "lucide-react": "^0.468.0",
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.2.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.3",
+    "vite": "^7.1.5",
+    "typescript": "^5.9.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9"
+  }
+}

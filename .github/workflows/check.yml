@@ -1,0 +1,23 @@
+name: Verify website and data
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci --no-fund --no-audit
+      - run: npm test
+      - run: npm run build

@@ -1,0 +1,20 @@
+# Agent Task Radar
+
+> A source-backed directory for discovering high-value Agent tasks.
+
+- Website: https://waynezengcheng-commits.github.io/awesome-agent-task-discovery/
+- Repository: https://github.com/waynezengcheng-commits/awesome-agent-task-discovery
+
+## Scope
+
+Each task describes its trigger, Agent execution loop, measurable outcome, and human or safety boundary. P0/P1/P2 and scores prioritize exploration; they do not predict ROI or authorize autonomous high-risk actions.
+
+## Current task categories
+
+- Engineering delivery
+- Customer operations
+- Risk and security
+- Knowledge work
+- Revenue growth
+- Data operations
+- Business operations

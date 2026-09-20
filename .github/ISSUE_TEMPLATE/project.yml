@@ -1,0 +1,26 @@
+name: Submit an Agent task opportunity
+description: Share evidence for a valuable, automatable Agent task
+title: "[Task opportunity] "
+labels: []
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: GitHub repository
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: What high-value task can an Agent complete?
+      description: Describe the trigger, outcome, and who benefits in plain language.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: What is the execution loop, proof of value, and human boundary?
+      description: Include implementation or README links, measurable success criteria, and any approval or safety requirement.
+    validations:
+      required: true
