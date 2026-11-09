@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-26T09:04:27.471Z",
+  "generatedAt": "2026-11-09T11:42:33.953Z",
   "queryCount": 28,
   "pagesPerQuery": 3,
-  "rawRepositoryHits": 6151,
-  "deduplicatedCandidates": 5700,
+  "rawRepositoryHits": 6164,
+  "deduplicatedCandidates": 5709,
   "rejectedBeforeEvidence": 0,
   "readmeChecked": 240,
-  "readmeRuleMatched": 207,
-  "valueSignalsFound": 191,
+  "readmeRuleMatched": 211,
+  "valueSignalsFound": 202,
   "publishedCandidates": 1000
 }
